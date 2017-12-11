@@ -1,0 +1,23 @@
+<p>
+  addemployee works!
+</p>
+<form novalidate [formGroup]="rForm" (ngSubmit)="addEmployee(rForm.value)">
+<table>
+	<tr>
+		<td>Name</td>
+		<!-- <td><input type="text" [(ngModel)]="newEmp.name"/></td> -->
+		<td><input type="text" formControlName="name"/></td>
+		<!-- <td><input type="text"/></td> -->
+	</tr>
+	<tr>
+		<td>Id</td>
+		<!-- <td><input type="text" [(ngModel)]="newEmp.id"/></td> -->
+		<td><input type="text" formControlName="id"/></td>
+		<!-- <td><input type="text"/></td> -->
+	</tr>
+	<tr>
+		<!-- <a href="javascript:void(0)" (click)="addEmployee()">Create Employee</a> -->
+		<button type="submit" [disabled]="!rForm.valid">Create Employee</button>
+	</tr>
+</table>
+</form>
