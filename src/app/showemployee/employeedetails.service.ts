@@ -10,14 +10,14 @@ export class EmployeedetailsComponent{
 		{
 			"name": "sudheer",
 			//"indexVal":"1",
-			"id": "sw176"
+			"id": "9000"
 			//,
 			//"src": "http://www.dogbazar.org/wp-content/uploads/2014/09/british-bull-dog-puppies.jpg"
 		},
 		{
 			"name": "mahalaxmi",
 			//"indexVal":"2",
-			"id": "sw177"
+			"id": "9001"
 			//,
 			//"src": "https://timedotcom.files.wordpress.com/2017/10/171018-dog-halloween-costumes-wonder-woman.jpg"
 		}
@@ -46,7 +46,6 @@ export class EmployeedetailsComponent{
 	}
 
 	updateDetails(emp){
-		debugger;
 		this._listOfEmployees[this._index] = emp;
 		console.log("final value", this._listOfEmployees[this._index]);
 	}
